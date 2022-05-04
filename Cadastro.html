@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Cadastro</title>
+		<meta charset="UTF-8">
+		<style type="text/css">
+			#ID
+			{
+			color: #13087E;
+			font-family: algerian;
+			text-align: center;
+			font-weight: bold;
+			font-size: 300%;
+			}
+		</style>
+		<style type="text/css">
+			.classe
+			{
+				color: #0D0652;
+				font-family: agency fb;
+				font-size: 150%;
+				font-weight: bold;
+			}
+			.classe2
+			{
+				color: #0D0652;
+				font-family: algerian;
+				font-size: 100%;
+				font-weight: bold;
+			}
+		</style>
+		<style type="text/css">
+			body{background-color: blueviolet;}
+				img {opacity: 0.2;}
+				
+		</style>
+		<style type="text/css">
+			#IDimg
+			{
+			background-image: url("http://www.taubate.sp.gov.br/wp-content/uploads/2020/05/cadastro-750x350.png");
+			opacity: 0.2;
+			}
+		</style>
+	</head>
+
+		<body>
+		<form method="POST">
+		<table border="0", font face= "algerian" cellpadding="5" cellspacing="0">
+			<th>
+				<tr><div id="ID">Cadastro</div></tr>
+				<td><div class="classe">Nome</div></td>
+				<td> <input type="text" name="CampoNome"
+							placeholder="Nome"
+							id="CampoNome"
+							size="30"
+							maxlength="30"  
+							required></td>
+							<tr>
+							<td><div class="classe">Sobrenome</div></td>
+				<td><input type="text" name="CampoSobrenome"
+							placeholder="Sobrenome"
+							id="campoSobrenome"
+							size="30"
+							maxlength="30"
+							required></td>
+							</tr>
+							<tr>	
+							<td><div class="classe">Email</div></td>
+				<td><input type="email" name="campoemail"
+							placeholder="Digite seu email"
+							id="campoemail"
+							size="30"
+							maxlength="30"
+							required></td>
+							</tr>
+							<tr>
+								<td><div class="classe">Data de nascimento:</div></td>
+								<td><input type="date" name="dataNascimento" id="date"></td>
+							</tr>
+							<tr>
+								<td><div class="classe">Idade</div></td>
+								<td><input type="number" 
+									name="idade"
+									id="idade"
+									size="5"
+									maxlength="5"
+									required></td>
+							</tr>
+							<tr>
+								<td><div class="classe">Nacionalidade:</div></td>
+								<td>
+								<select name="Nacionalidade" id="Nacionalidade">
+  								<option value="B">Brasileira</option>
+  								<option value="A">Americana</option>
+  								<option value="Al">Alemão</option>
+  								<option value="o">Outro</option>
+								</select>
+								<font face="agency fb"><font size="3">Outro</font></font><input type="text" name="outroidioma" id= "outroidioma"placeholder="Outro idioma" size="10" maxlength="15">
+								</td>
+							</tr>
+							<tr>
+								<td><div class="classe">Idioma</div></td>
+						<td><input id="CampoIdioma" name="CampoHobby" type="checkbox" value="P" checked>Português 
+						<input id="CampoIdioma" name="CampoHobby" type="checkbox" value="I">Inglês
+						<input id="CampoIdioma" name="CampoHobby" type="checkbox" value="E" checked>Espanhol
+						<input id="CampoIdioma" name="CampoHobby" type="checkbox" value="A">Alemão
+						<input id="CampoIdioma" name="CampoHobby" type="checkbox" value="F" checked>Francês
+						<input id="CampoIdioma" name="CampoHobby" type="checkbox" value="I">Italiano
+						<input id="CampoIdioma" name="CampoHobby" type="checkbox" value="O" checked>Outro <input type="text" name="outroidioma" id= "outroidioma"placeholder="Outro idioma" size="10" maxlength="15">
+						</td>
+							</tr>
+					<td><div class="classe">Periodo em que estuda</div></font></td>
+				<td><input type="radio" name="campoperiodo" value="0"> <div class="classe2">Matutino</div>
+				<input type="radio" name="campoperiodo" value="1" checked> <div class="classe2">Vespertino</div>
+				<input type="radio" name="campoperiodo" value="2"> <div class="classe2">Noturno</div>
+			</td>
+							</tr>
+							<tr>
+								<td><div class="classe">Horário em que estuda:</div></td>
+								<td><input type="time" name="HorarioEstuda" id="HorarioEstuda" min="00:00" max="23:59"><font face="algerian"> <font size="3">até</font></font><input type="time" name="HorarioEstuda" id="HorarioEstuda" min="00:00" max="23:59"></td></td>
+								
+							</tr>
+							<tr>
+								
+								</td>
+							</tr>
+								<tr>
+								<td><div class="classe">Satisfação com a Universidade</div></td>
+								<td>
+									<input type="range" list="tickmarks">
+								<datalist id="tickmarks">
+  								<option value="0">
+  								<option value="10">
+  								<option value="20">
+  								<option value="30">
+  								<option value="40">
+  								<option value="50">
+  								<option value="60">
+  								<option value="70">
+  								<option value="80">
+  								<option value="90">
+  								<option value="100">
+								</datalist>
+								</td>
+								</tr>
+								<tr>
+										<td><div class="classe">Observações</div><td><textarea name="campoObs" id="campoObs" rows="10" cols="30" placeholder="Observações..." size="500" maxlength="500"></textarea>
+									</td>
+									<tr>
+									<td>
+										<input type="submit" name="Enviar" value="Enviar">
+										<input type="reset" name="Apagar" value="Apagar">
+									</td>
+									</tr>
+								</tr>
+							</th>
+						</table>
+						<html>
